@@ -3,16 +3,6 @@ import streamlit as st
 # Title
 st.title("Nirvana Cafe Menu")
 
-# Sidebar for navigation
-menu_section = st.sidebar.radio("Select Menu Section", [
-    "Breakfast",
-    "Appetizers",
-    "Beverages",
-    "Main Course",
-    "Roti & Rice",
-    "Veg Main Course"
-])
-
 # Menu data
 menu = {
     "Breakfast": {
@@ -80,10 +70,11 @@ menu = {
     }
 }
 
-# Display menu items based on the selected section
-st.subheader(f"{menu_section} Menu")
-for item, price in menu[menu_section].items():
-    st.write(f"{item} - ₹{price}")
+# Display menu items section by section
+for section, items in menu.items():
+    st.subheader(section)
+    for item, price in items.items():
+        st.write(f"**₹{price:<4}**  {item}")
 
 # Footer
 st.write("---")
