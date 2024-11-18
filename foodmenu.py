@@ -1,7 +1,39 @@
 import streamlit as st
 
 # Title
-st.title("Nirvana Cafe Menu")
+st.markdown(
+    """
+    <style>
+    body {
+        background-image: url('data:image/jpg;base64,{image}');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    .menu-section {
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+import base64
+
+# Load and encode the background image
+with open("tomato-sauce-on-black-background-2024-10-16-12-43-51-utc.jpg", "rb") as file:
+    image = base64.b64encode(file.read()).decode()
 
 # Menu data
 menu = {
@@ -74,14 +106,16 @@ menu = {
 section = st.selectbox("Select Menu Section", list(menu.keys()))
 
 # Display selected section with markdown
+st.markdown(f"<div class='menu-section'>", unsafe_allow_html=True)
 st.subheader(section)
 for item, price in menu[section].items():
-    st.markdown(f"<div style='display: flex; justify-content: space-between;'>"
-                f"<span>{item}</span>"
-                f"<span><b>₹{price}</b></span>"
-                f"</div>", unsafe_allow_html=True)
+    st.markdown(
+        f"<div class='menu-item'><span>{item}</span><span>₹{price}</span></div>",
+        unsafe_allow_html=True,
+    )
+st.markdown("</div>", unsafe_allow_html=True)
 
 # Footer
 st.write("---")
-st.write("**Nirvana by Oztel, Kasol**")
-st.write("📞 858 057 4937")
+st.markdown("<p style='color: white; text-shadow: 1px 1px 2px black;'>**Nirvana by Oztel, Kasol**</p>", unsafe_allow_html=True)
+st.markdown("<p style='color: white; text-shadow: 1px 1px 2px black;'>📞 858 057 4937</p>", unsafe_allow_html=True)
