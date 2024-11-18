@@ -70,11 +70,13 @@ menu = {
     }
 }
 
-# Display menu items section by section
-for section, items in menu.items():
-    st.subheader(section)
-    for item, price in items.items():
-        st.write(f"**₹{price:<4}**  {item}")
+# Dropdown for menu selection
+section = st.selectbox("Select Menu Section", list(menu.keys()))
+
+# Display selected section
+st.subheader(section)
+for item, price in menu[section].items():
+    st.write(f"{item:<30}{price:>40}")
 
 # Footer
 st.write("---")
