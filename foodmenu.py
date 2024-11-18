@@ -73,10 +73,13 @@ menu = {
 # Dropdown for menu selection
 section = st.selectbox("Select Menu Section", list(menu.keys()))
 
-# Display selected section
+# Display selected section with markdown
 st.subheader(section)
 for item, price in menu[section].items():
-    st.write(f"{item:<30}{price:>40}")
+    st.markdown(f"<div style='display: flex; justify-content: space-between;'>"
+                f"<span>{item}</span>"
+                f"<span><b>₹{price}</b></span>"
+                f"</div>", unsafe_allow_html=True)
 
 # Footer
 st.write("---")
