@@ -54,7 +54,7 @@ menu = {
         "Egg Paratha": 130,
         "Panner Paratha": 160,
         "Poori Bhaji": 180,
-        "Hash Potatoes w/Toast and Coffee/Tea": 250
+        "Hash Potatoes with Toast and Coffee/Tea": 250
     },
     "Appetizers": {
         "Peanut Masala": 140,
@@ -133,3 +133,4 @@ for item, price in menu[section].items():
 st.write("---")
 st.write("**Nirvana by Oztel, Kasol**")
 st.write("📞 858 057 4937")
+st.writer("We make our food with love and care.")
