@@ -23,8 +23,9 @@ menu = {
         "Banana Shake": 130,
         "Oreo Shake": 200,
         "Kitkat Shake": 200,
-        "Soft Drink 750 ML": 60,
-        "Lemonade": 80
+        "Lemonade": 80,
+        "Soft Drink 750 ML": 60
+        "Club Soda": 30
         
     },
 
