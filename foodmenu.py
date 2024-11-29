@@ -133,4 +133,4 @@ for item, price in menu[section].items():
 st.write("---")
 st.write("**Nirvana by Oztel, Kasol**")
 st.write("📞 858 057 4937")
-st.writer("We make our food with love and care.")
+
