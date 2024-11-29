@@ -98,7 +98,7 @@ menu = {
         "Panner Butter Masala": 300,
         "Kaju Paneer": 340
     },
-    "Main Course (Non Veg)": {
+    "Main Course(Non Veg)": {
         "Kadhai Chicken": 460,
         "Chicken Curry": 460,
         "Rara Chicken": 480,
