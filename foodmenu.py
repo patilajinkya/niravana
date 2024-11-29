@@ -27,13 +27,7 @@ menu = {
         "Lemonade": 80
         
     },
-    "Soups": {
-        "Tomato Soup": 150,
-        "Veg Manchow Soup": 160,
-        "Sweet Corn Soup": 150,
-        "Chicken Soup": 220,
-        "Chicken Manchow Soup": 230
-    },
+
     "Breakfast": {
         "Masala Omlet": 90,
         "Bread Omlet": 100,
@@ -58,6 +52,20 @@ menu = {
         "Poori Bhaji": 180,
         "Hash Potatoes with Toast and Coffee/Tea": 250
     },
+    "Sandwich": {
+        "Veg club Sandwich": 200,
+        "Veg Cheese Grilled Sandwich": 220,
+        "Bombay Masala Sandwich": 200,
+        "Chicken club Sandwich": 280
+       
+    },
+    "Soups": {
+        "Tomato Soup": 150,
+        "Veg Manchow Soup": 160,
+        "Sweet Corn Soup": 150,
+        "Chicken Soup": 220,
+        "Chicken Manchow Soup": 230
+    },
     "Appetizers": {
         "Masala Peanut": 140,
         "Chili Paneer": 350,
@@ -76,13 +84,7 @@ menu = {
         "Chicken Nuggets": 270
         
     },
-    "Sandwich": {
-        "Veg club Sandwich": 200,
-        "Veg Cheese Grilled Sandwich": 220,
-        "Bombay Masala Sandwich": 200,
-        "Chicken club Sandwich": 280
-       
-    },
+
     "Main Course (Veg)": {
         "Dal Fry": 170,
         "Dal Tadka": 190,
