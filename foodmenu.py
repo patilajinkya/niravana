@@ -103,9 +103,7 @@ menu = {
         "Egg Curry": 200,
         "Egg Burji": 180
     },
-    "Roti, Rice and Noodles": {
-        "Tawa Roti": 20,
-        "Butter Roti": 25,
+    "Rice and Noodles": {
         "Plain Rice": 120,
         "Jeera Rice": 150,
         "Veg Fried Rice": 180,
@@ -114,6 +112,10 @@ menu = {
         "Veg Noodles": 180,
         "Egg Noodles": 200,
         "Chicken Noodles": 220
+    },
+    "Roti":{
+        "Tawa Roti": 20,
+        "Butter Roti": 25,
     }
 }
 
