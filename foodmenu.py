@@ -15,6 +15,7 @@ menu = {
         "Black Coffee": 50,
         "Cappuccino": 100,
         "Sweet/Salted Lassi": 100,
+        "Badam Milk": 100,
         "Detox Kahwa": 80,
         "Lemon Water": 70,
         "Lemon Soda": 100,
@@ -23,14 +24,15 @@ menu = {
         "Oreo Shake": 200,
         "Kitkat Shake": 200,
         "Soft Drink 750 ML": 60,
-        "Lemonade": 80,
-        "Badam Milk": 100
+        "Lemonade": 80
+        
     },
     "Soups": {
         "Tomato Soup": 150,
-        "Veg Manchow": 150,
-        "Sweet Corn": 150,
-        "Chicken Soup": 220
+        "Veg Manchow Soup": 160,
+        "Sweet Corn Soup": 150,
+        "Chicken Soup": 220,
+        "Chicken Manchow Soup": 230
     },
     "Breakfast": {
         "Masala Omlet": 90,
@@ -57,44 +59,47 @@ menu = {
         "Hash Potatoes with Toast and Coffee/Tea": 250
     },
     "Appetizers": {
-        "Peanut Masala": 140,
-        "Chilli Paneer": 350,
-        "Chilli Potatoes": 280,
+        "Masala Peanut": 140,
+        "Chili Paneer": 350,
+        "Chili Potatoes": 280,
         "Veg Pakoda": 190,
         "Cheese Nachoes": 190,
-        "Chilli Chicken": 420,
-        "Chi Pakoda": 440,
-        "Chi Nuggets": 270,
         "French Fries": 150,
         "Piri Piri French Fries": 180,
         "Cheese French Fries": 200,
-        "Honey Chilli Potato": 290,
+        "Honey Chili Potato": 290,
         "Masala Papad": 130,
         "Veg Momos": 150,
-        "Chicken Momos": 200
+        "Chicken Momos": 200,
+        "Chili Chicken": 420,
+        "Chicken Pakoda": 440,
+        "Chicken Nuggets": 270
+        
     },
     "Sandwich": {
         "Veg club Sandwich": 200,
         "Veg Cheese Grilled Sandwich": 220,
+        "Bombay Masala Sandwich": 200,
         "Chicken club Sandwich": 280
+       
     },
     "Main Course (Veg)": {
         "Dal Fry": 170,
         "Dal Tadka": 190,
-        "Dal Makkani": 220,
+        "Dal Makhani": 220,
         "Rajma": 200,
         "Dum Aloo": 180,
-        "Aloo Mattar": 190,
+        "Aloo Matar": 190,
         "Aloo Gobhi": 190,
         "Aloo Jeera": 180,
         "Mixed veg": 220,
-        "Kadai Paneer": 290,
-        "Mattar Paneer": 290,
+        "Kadhai Paneer": 290,
+        "Matar Paneer": 290,
         "Panner Butter Masala": 300,
         "Kaju Paneer": 340
     },
     "Main Course (Non Veg)": {
-        "Kadai Chicken": 460,
+        "Kadhai Chicken": 460,
         "Chicken Curry": 460,
         "Rara Chicken": 480,
         "Butter Chicken": 520,
@@ -115,7 +120,7 @@ menu = {
     },
     "Roti":{
         "Tawa Roti": 20,
-        "Butter Roti": 25,
+        "Butter Roti": 25
     }
 }
 
@@ -133,6 +138,7 @@ for item, price in menu[section].items():
 
 # Footer
 st.write("---")
+st.write("**Add extra Cheese for 30/-**")
 st.write("**Nirvana by Oztel, Kasol**")
 st.write("📞 858 057 4937")
 
