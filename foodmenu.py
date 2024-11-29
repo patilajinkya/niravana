@@ -138,7 +138,7 @@ for item, price in menu[section].items():
 
 # Footer
 st.write("---")
-st.write("**Add extra Cheese for 30/-**")
 st.write("**Nirvana by Oztel, Kasol**")
+st.write("****")
 st.write("📞 858 057 4937")
 
