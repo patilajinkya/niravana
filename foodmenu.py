@@ -24,7 +24,7 @@ menu = {
         "Oreo Shake": 200,
         "Kitkat Shake": 200,
         "Lemonade": 80,
-        "Soft Drink 750 ML": 60
+        "Soft Drink 750 ML": 60,
         "Club Soda": 30
         
     },
