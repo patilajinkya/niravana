@@ -26,7 +26,7 @@ menu = {
         "Lemonade": 80,
         "Soft Drink 750 ML": 60,
         "Club Soda": 30,
-        "Hell Energy Drink:" 70,
+        "Hell Energy Drink": 70,
         "Packaged Water:" 30
         
     },
