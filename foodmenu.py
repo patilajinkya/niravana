@@ -55,6 +55,18 @@ menu = {
         "Poori Bhaji": 180,
         "Hash Potatoes with Toast and Coffee/Tea": 250
     },
+    "South Indian": {
+        "Idli (2pc)": 100,
+        "Medu Vada": 130,
+        "Dosa": 150,
+        "Masala Dosa": 180,
+        "Onion Dosa": 170,
+        "Egg Dosa": 200,
+        "Bagara Rice & Chicken Curry": 500,
+        "Bagara Rice & Chicke Fry": 500,
+        "Bagara Rice & Aloo Fry": 400
+    
+    },
     "Sandwich": {
         "Veg club Sandwich": 200,
         "Veg Cheese Grilled Sandwich": 220,
