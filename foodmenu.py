@@ -55,6 +55,7 @@ menu = {
         "Poori Bhaji": 180,
         "Hash Potatoes with Toast and Coffee/Tea": 250
     },
+    
     "South Indian": {
         "Idli (2pc)": 100,
         "Medu Vada": 130,
