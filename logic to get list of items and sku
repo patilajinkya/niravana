@@ -1,0 +1,96 @@
+import streamlit as st
+import requests
+from datetime import datetime
+
+import requests
+
+# Replace with your actual Loyverse access token
+access_token = '548ae90ce5fa49229885c3de1ff2eadf'
+
+# API endpoint
+url = 'https://api.loyverse.com/v1.0/items'
+
+# Set up headers
+headers = {
+    'Authorization': f'Bearer {access_token}',
+    'Content-Type': 'application/json'
+}
+
+food_menu = []
+
+# Make the GET request
+response = requests.get(url, headers=headers)
+
+# Check the response
+if response.status_code == 200:
+    data = response.json()
+    #print(data["items"])
+    #print(len(data["items"]))
+    food_data = data["items"]
+    food_menu = []
+    food_item_dict = {}
+
+    for i in food_data:
+
+        #print(data["items"][0]["variants"][0]["variant_id"])
+        #print(data["items"][0]["item_name"])
+        #print(data["items"][0]["variants"][0]["sku"])
+        food_item = {"name": i["item_name"], "variant_id": i["variants"][0]["variant_id"], "sku": i["variants"][0]["sku"]}
+        food_menu.append(food_item)
+
+        #print(food_item_dict)
+
+
+
+
+else:
+    print(f"Error {response.status_code}: {response.text}")
+
+limit = 250  # Max allowed by API
+cursor = None
+
+while True:
+    # Build query parameters
+    params = {
+        'limit': limit
+    }
+    if cursor:
+        params['cursor'] = cursor
+
+    # Make the API request
+    response = requests.get(url, headers=headers, params=params)
+    print(response)
+
+    if response.status_code != 200:
+        print(f"Error {response.status_code}: {response.text}")
+        break
+
+    data = response.json()
+    # print(data["items"])
+    # print(len(data["items"]))
+    food_data = data["items"]
+    food_menu = []
+    food_item_dict = {}
+
+    for i in food_data:
+        # print(data["items"][0]["variants"][0]["variant_id"])
+        # print(data["items"][0]["item_name"])
+        # print(data["items"][0]["variants"][0]["sku"])
+        food_item = {"name": i["item_name"], "variant_id": i["variants"][0]["variant_id"],
+                     "sku": i["variants"][0]["sku"]}
+        food_menu.append(food_item)
+
+        # print(food_item_dict)
+
+
+    # Check if there's a next page
+    cursor = data.get('cursor')
+    if not cursor:
+        break
+
+# Print or return all collected stores
+
+
+#print(food_item_dict)
+print(food_menu)
+print(len(food_menu))
