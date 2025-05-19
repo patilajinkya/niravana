@@ -83,71 +83,65 @@ menu = {
     }
 }
 
-# Dropdown for menu selection
-section = st.selectbox("Select Menu Section", list(menu.keys()))
+st.title("Nirvana Cafe Menu")
 
-# Display selected section with markdown
-st.subheader(section)
-for item, price in menu[section].items():
-    st.markdown(f"<div style='display: flex; justify-content: space-between;'>"
-                f"<span>{item}</span>"
-                f"<span><b>₹{price}</b></span>"
-                f"</div>", unsafe_allow_html=True)
-# Dropdown for menu selection
 section = st.selectbox("Select Menu Section", list(menu.keys()))
-
-# Display selected section with markdown
 st.subheader(section)
-selected_items = {}  # Dictionary to store selected items and quantities
 
 for item, price in menu[section].items():
-    quantity = st.number_input(f"Quantity for {item} (₹{price})", min_value=0, max_value=10, step=1)
-    if quantity > 0:
-        selected_items[item] = {"price": price, "quantity": quantity}
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown(f"**{item}** — ₹{price}")
+    with col2:
+        qty_key = f"{item}_qty"
+        qty = st.number_input("Qty", min_value=0, max_value=10, key=qty_key)
+        if st.button("Add to Cart", key=f"add_{item}"):
+            if qty > 0:
+                if item in st.session_state.cart:
+                    st.session_state.cart[item]["quantity"] += qty
+                else:
+                    st.session_state.cart[item] = {"price": price, "quantity": qty}
+                st.success(f"Added {qty} x {item} to cart")
+            else:
+                st.warning("Please select a quantity greater than 0")
 
-# Order summary and form for customer details
-if selected_items:
-    st.subheader("Order Summary")
-    total_amount = 0
-    for item, details in selected_items.items():
-        st.write(f"{item} x {details['quantity']} = ₹{details['quantity'] * details['price']}")
-        total_amount += details['quantity'] * details['price']
-    
-    st.write(f"**Total Amount: ₹{total_amount}**")
+# ---------- Cart and Order Section ----------
+st.markdown("---")
+st.header("🛒 Your Cart")
 
-    # Customer details
+if st.session_state.cart:
+    total = 0
+    for item, details in st.session_state.cart.items():
+        item_total = details["price"] * details["quantity"]
+        st.write(f"{item} — {details['quantity']} x ₹{details['price']} = ₹{item_total}")
+        total += item_total
+    st.markdown(f"### Total: ₹{total}")
+
     st.subheader("Enter Your Details")
     name = st.text_input("Name")
     email = st.text_input("Email")
     phone = st.text_input("Phone Number")
-    address = st.text_area("Shipping Address")
+    address = st.text_area("Delivery Address")
 
-    # Button to place order
     if st.button("Place Order"):
         if name and email and phone and address:
-            st.success("🎉 Your order has been placed successfully!")
-            st.write("**Order Details**")
+            st.success("✅ Order placed successfully!")
+            st.write("**Order Summary:**")
+            for item, details in st.session_state.cart.items():
+                st.write(f"{item} x {details['quantity']} = ₹{details['price'] * details['quantity']}")
+            st.write(f"**Total: ₹{total}**")
             st.write(f"**Name:** {name}")
             st.write(f"**Email:** {email}")
             st.write(f"**Phone:** {phone}")
             st.write(f"**Address:** {address}")
-            st.write("**Items Ordered:**")
-            for item, details in selected_items.items():
-                st.write(f"{item} x {details['quantity']} = ₹{details['quantity'] * details['price']}")
-            st.write(f"**Total Amount:** ₹{total_amount}")
+            # Clear cart after placing order
+            st.session_state.cart.clear()
         else:
-            st.warning("Please fill in all customer details before placing the order.")
+            st.warning("Please fill all your details before placing the order.")
 else:
-    st.warning("Please select items from the menu to place an order.")
+    st.info("Your cart is empty.")
 
-# Footer
+# ---------- Footer ----------
 st.write("---")
-st.write("**Nirvana by Oztel, Kasol**")
-st.write("****")
-st.write("📞 858 057 4937")
-
-# Footer
-st.write("---")
-st.write("**Nirvana by Oztel, Kasol**")
-st.write("****")
+st.write("📍 Nirvana by Oztel, Kasol")
 st.write("📞 858 057 4937")
