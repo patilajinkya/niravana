@@ -1,5 +1,11 @@
 import streamlit as st
 
+st.set_page_config(page_title="Nirvana Cafe", layout="wide")
+
+# ---------- Initialize session state for cart ----------
+if "cart" not in st.session_state:
+    st.session_state.cart = {}
+
 # Title
 st.title("Nirvana Cafe Menu")
 
