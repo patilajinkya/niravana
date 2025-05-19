@@ -40,11 +40,58 @@ menu = {
     # Add other categories here in same format...
 }
 
-# ---- STREAMLIT APP ---- #
-st.title("📋 Food Menu")
+# Dropdown for menu selection
+section = st.selectbox("Select Menu Section", list(menu.keys()))
 
-# Category dropdown
-selected_category = st.selectbox("Select a category", options=menu.keys())
+# Display selected section with markdown
+st.subheader(section)
+selected_items = {}  # Dictionary to store selected items and quantities
+
+for item, price in menu[section].items():
+    quantity = st.number_input(f"Quantity for {item} (₹{price})", min_value=0, max_value=10, step=1)
+    if quantity > 0:
+        selected_items[item] = {"price": price, "quantity": quantity}
+
+# Order summary and form for customer details
+if selected_items:
+    st.subheader("Order Summary")
+    total_amount = 0
+    for item, details in selected_items.items():
+        st.write(f"{item} x {details['quantity']} = ₹{details['quantity'] * details['price']}")
+        total_amount += details['quantity'] * details['price']
+    
+    st.write(f"**Total Amount: ₹{total_amount}**")
+
+    # Customer details
+    st.subheader("Enter Your Details")
+    name = st.text_input("Name")
+    email = st.text_input("Email")
+    phone = st.text_input("Phone Number")
+    address = st.text_area("Shipping Address")
+
+    # Button to place order
+    if st.button("Place Order"):
+        if name and email and phone and address:
+            st.success("🎉 Your order has been placed successfully!")
+            st.write("**Order Details**")
+            st.write(f"**Name:** {name}")
+            st.write(f"**Email:** {email}")
+            st.write(f"**Phone:** {phone}")
+            st.write(f"**Address:** {address}")
+            st.write("**Items Ordered:**")
+            for item, details in selected_items.items():
+                st.write(f"{item} x {details['quantity']} = ₹{details['quantity'] * details['price']}")
+            st.write(f"**Total Amount:** ₹{total_amount}")
+        else:
+            st.warning("Please fill in all customer details before placing the order.")
+else:
+    st.warning("Please select items from the menu to place an order.")
+
+# Footer
+st.write("---")
+st.write("**Nirvana by Oztel, Kasol**")
+st.write("****")
+st.write("📞 858 057 4937")
 
 # Display items for selected category
 items = menu[selected_category]
