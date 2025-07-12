@@ -1,0 +1,176 @@
+Item,Category,Price
+,,
+Milk Tea,Beverages,50.0
+Black Tea,Beverages,40.0
+Lemon Tea,Beverages,70.0
+Ginger Lemon Honey,Beverages,100.0
+Mint Tea,Beverages,50.0
+Milk Coffee,Beverages,70.0
+Black Coffee,Beverages,50.0
+Cold Coffee,Beverages,130.0
+Frappe,Beverages,190.0
+Sweet/Salted Lassi,Beverages,100.0
+Lemon Water,Beverages,70.0
+Lemon Soda,Beverages,100.0
+Lemonade,Beverages,80.0
+Kokum Sharbat,Beverages,180.0
+Strawberry Mocktail,Beverages,190.0
+Blueberry Mocktail,Beverages,190.0
+Mango Mocktail,Beverages,190.0
+Banana Shake,Beverages,130.0
+Oreo Shake,Beverages,200.0
+Kitkat Shake,Beverages,200.0
+Club Soda,Beverages,30.0
+Soft Drink 750 ML,Beverages,60.0
+Water Bottle 1L,Beverages,30.0
+Tomato Soup,Soups,150.0
+Veg Manchow Soup,Soups,150.0
+Cream of Mushroom,Soups,180.0
+Sweet Corn,Soups,150.0
+Veg Clear soup,Soups,160.0
+Chicken Clear Soup,Soups,220.0
+Chicken Manchow Soup,Soups,230.0
+Masala Omlet,Breakfast,90.0
+Bread Omlet,Breakfast,100.0
+Mushroom Omlette,Breakfast,160.0
+Cheese Omlet,Breakfast,150.0
+Eggs (Boiled/Scrambled/Fried),Breakfast,110.0
+Poha,Breakfast,130.0
+Butter Toast,Breakfast,80.0
+French Toast,Breakfast,110.0
+Nutella Toast,Breakfast,150.0
+Plain Maggie,Breakfast,80.0
+Masala Maggie,Breakfast,100.0
+Cheese Maggie,Breakfast,140.0
+Veg Maggie,Breakfast,110.0
+Egg Maggie,Breakfast,130.0
+Garlic bread,Breakfast,150.0
+Aloo Paratha,Breakfast,100.0
+Pyaz Paratha,Breakfast,100.0
+Gobhi Paratha,Breakfast,130.0
+Egg Paratha,Breakfast,130.0
+Panner Paratha,Breakfast,160.0
+Poori Bhaji,Breakfast,180.0
+Hash Potatoes w/Toast and Coffee/Tea,Breakfast,250.0
+Full English Breakfast,Breakfast,400.0
+Peanut Masala,Appetizers,140.0
+Veg Pakoda,Appetizers,190.0
+Paneer Pakoda,Appetizers,340.0
+Chilli Paneer,Appetizers,350.0
+Cheese Nachoes,Appetizers,190.0
+Chilli Chicken,Appetizers,410.0
+Chicken 65,Appetizers,420.0
+Garlic Chicken,Appetizers,410.0
+Pepper Chicken,Appetizers,440.0
+Chicken Pakoda,Appetizers,440.0
+Chicken Nuggets,Appetizers,270.0
+BBQ Wings,Appetizers,450.0
+French Fries,Appetizers,150.0
+Piri Piri French Fries,Appetizers,180.0
+Cheese French Fries,Appetizers,200.0
+Potato Wedges,Appetizers,190.0
+Chilli Potatoes,Appetizers,280.0
+Honey Chilli Potato,Appetizers,290.0
+Masala Papad,Appetizers,130.0
+Veg Momos (Steamed),Appetizers,150.0
+Chicken Momos (Steamed),Appetizers,200.0
+Veg Club Sandwich,Sandwich,200.0
+Veg Cheese Grilled Sandwich,Sandwich,220.0
+Chicken Club Sandwich,Sandwich,280.0
+Bombay Sandwich,Sandwich,200.0
+Chilli Cheese Toast,Sandwich,110.0
+Paneer Tikka Sandwich,Sandwich,240.0
+Peri Peri Chicken Sandwich,Sandwich,290.0
+Grilled Chicken Sandwich,Sandwich,280.0
+Garlic Chicken Mayo Sandwich,Sandwich,290.0
+Dal Fry,Main Course (Veg),170.0
+Dal Tadka,Main Course (Veg),190.0
+Dal Makkani,Main Course (Veg),220.0
+Rajma,Main Course (Veg),200.0
+Dum Aloo,Main Course (Veg),180.0
+Aloo Mattar,Main Course (Veg),190.0
+Aloo Gobhi,Main Course (Veg),190.0
+Aloo Jeera,Main Course (Veg),180.0
+Mixed veg,Main Course (Veg),220.0
+Kadai Paneer,Main Course (Veg),290.0
+Mattar Paneer,Main Course (Veg),290.0
+Panner Butter Masala,Main Course (Veg),300.0
+Kaju Paneer,Main Course (Veg),340.0
+Kadai Chicken,Main Course (Non Veg),460.0
+Chicken Curry,Main Course (Non Veg),460.0
+Rara Chicken,Main Course (Non Veg),480.0
+Butter Chicken,Main Course (Non Veg),520.0
+Mughlai Chicken,Main Course (Non Veg),540.0
+Kaju Chicken,Main Course (Non Veg),550.0
+Egg Curry,Main Course (Non Veg),200.0
+Egg Burji,Main Course (Non Veg),180.0
+Tawa Roti,Roti,20.0
+Ghee Roti,Roti,30.0
+Butter Roti,Roti,25.0
+Plain Rice,Rice and Noodles,120.0
+Jeera Rice,Rice and Noodles,150.0
+Veg Fried Rice,Rice and Noodles,180.0
+Egg Fried Rice,Rice and Noodles,200.0
+Chicken Fried Rice,Rice and Noodles,220.0
+Veg Noodles,Rice and Noodles,180.0
+Egg Noodles,Rice and Noodles,200.0
+Chicken Noodles,Rice and Noodles,220.0
+Idli (2 Pcs),South Indian,100.0
+Dosa,South Indian,150.0
+Onion Dosa,South Indian,170.0
+Masala Dosa,South Indian,180.0
+Egg Dosa,South Indian,200.0
+Paneer Dosa,South Indian,230.0
+Cheese Dosa,South Indian,220.0
+Chocolate Dosa,South Indian,250.0
+Uthappam ,South Indian,150.0
+Mysore Bonda,South Indian,100.0
+Medu Vada,South Indian,130.0
+Ponganalu (6 Pcs),South Indian,120.0
+Upma Suji,South Indian,120.0
+Upma Broken Rice,South Indian,130.0
+Vermecelli Upma,South Indian,150.0
+Lemon Rice,South Indian,200.0
+Tamarind Rice (Pulihora),South Indian,190.0
+Mango Dal,South Indian,210.0
+Curd Rice,South Indian,180.0
+Sambar Rice,South Indian,260.0
+Rasam Rice,South Indian,210.0
+Dal rasam Rice,South Indian,220.0
+Aloo Fry,South Indian,200.0
+Punugulu Curry,South Indian,250.0
+Guttu Vankay,South Indian,240.0
+Kaju Chicken Pakodi,South Indian,450.0
+Andhra Chicken Fry,South Indian,460.0
+Bagara Rice & Chicken Curry,Biryanis,380.0
+Bagara Rice & Chicken Fry,Biryanis,380.0
+Bagara Rice & Aloo Fry,Biryanis,290.0
+Chicken Dum Biryani,Biryanis,440.0
+Mutton Dum Biryani,Biryanis,540.0
+Andhra Chicken Biryani,Biryanis,350.0
+Veg Pulao,Biryanis,240.0
+Hummus with Pita Bread,Israeli,310.0
+Chicken Snitzel,Israeli,420.0
+Falalfel,Israeli,320.0
+Shakshuka,Israeli,290.0
+Plain Mayo,Extras,20.0
+Extra Cheese,Extras,25.0
+Bbq Dip,Extras,30.0
+Thousand Island,Extras,30.0
+Chipotle Southwest,Extras,30.0
+Mint Mayo,Extras,30.0
+Peri Peri Sauce,Extras,30.0
+Sweet Chilli,Extras,30.0
+Siracha,Extras,30.0
+Dahi,Extras,30.0
+Sambar,Extras,50.0
+Chutney,Extras,30.0
+Ghee Bobattu (2 Pieces),Dessert,150.0
+Semiya Payasam (Verimiceli Keer),Dessert,220.0
+Gulab Jamun (3 Pieces),Dessert,180.0
+Double ka meeta,Dessert,250.0
+Shahi Tukada,Dessert,280.0
+Hello to the Queen,Dessert,360.0
+Blueberry Pancake,Dessert,380.0
+Strawberry Pancake,Dessert,380.0
+Maple Pancake,Dessert,390.0
